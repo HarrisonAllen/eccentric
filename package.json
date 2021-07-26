@@ -1,7 +1,7 @@
 {
   "name": "eccentric",
   "author": "Harrison Allen",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "keywords": [
     "pebble-app"
   ],
@@ -11,6 +11,19 @@
     "uuid": "c86d4afc-444c-4a38-ab62-fc13b93dd9a8",
     "sdkVersion": "3",
     "enableMultiJS": true,
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "BackgroundOuterColor",
+      "BackgroundInnerColor",
+      "HourColor",
+      "MinuteColor",
+      "SecondsEnabled",
+      "SecondsColor",
+      "BatteryEnabled",
+      "BatteryColor"
+    ],
     "targetPlatforms": [
       "aplite",
       "basalt",
@@ -24,5 +37,8 @@
     "resources": {
       "media": []
     }
+  },
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
   }
 }
